@@ -1,0 +1,136 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,900,900i&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/Logo.png" alt="Logotipo" /></a>
+    </div>
+  </header>
+
+
+  <nav>
+    <!--Menu movil-->
+    <div class="menu-movil">
+      <button onclick="botonMenu()" class="dropbtn"><i class="fas fa-bars"></i></button>
+      <div id="myMenu" class="menu-content">
+        <li><a href="lenguajes-front-end.html">Lenguajes front-end</a></li>
+        <li><a href="preprocesadores.html">Preprocesadores</a></li>
+        <li><a href="">Module bundlers</a></li>
+      </div>
+    </div>
+
+    <!--Menu desktop-->
+    <ul class="menu_desktop">
+      <li><a href="lenguajes-front-end.html">Lenguajes front-end</a></li>
+      <li><a href="preprocesadores.html">Preprocesadores</a></li>
+      <li><a href="">Module bundlers</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="titular_seccion">
+      <a href="lenguajes-front-end.html">
+        <h1>LENGUAJES FRONT-END</h1>
+      </a>
+    </section>
+    <section class="ancho_pagina">
+      <div class="seccion_home">
+        <a href="lenguaje-html.html"><img src="img/HTML5.png" alt="Logo HTML" /></a>
+        <a href="lenguaje-html.html" class="nombre_categoria">HTML</a>
+      </div>
+
+      <div class="seccion_home">
+        <a href=""><img src="img/CSS3.png" alt="Logo CSS" /></a>
+        <a href="" class="nombre_categoria">CSS</a>
+      </div>
+
+      <div class="seccion_home">
+        <a href=""><img src="img/JS.png" alt="Logo Javascript" /></a>
+        <a href="" class="nombre_categoria">Javascript</a>
+      </div>
+    </section>
+
+    <section class="titular_seccion">
+      <a href="preprocesadores.html">
+        <h1>PREPROCESADORES</h1>
+      </a>
+    </section>
+    <section class="ancho_pagina">
+      <div class="seccion_home">
+        <a href=""><img src="img/Pug.png" alt="Logo Pug" /></a>
+        <a href="" class="nombre_categoria">Pug</a>
+      </div>
+
+      <div class="seccion_home">
+        <a href=""><img src="img/Babel.png" alt="Logo Babel" /></a>
+        <a href="" class="nombre_categoria">Babel</a>
+      </div>
+
+      <div class="seccion_home">
+        <a href="postCSS.html"><img src="img/PostCSS.png" alt="Logo PostCSS" /></a>
+        <a href="postCSS.html" class="nombre_categoria">PostCSS</a>
+      </div>
+    </section>
+
+    <section class="titular_seccion">
+      <a href="">
+        <h1>MODULE BUNDLERS</h1>
+      </a>
+    </section>
+
+    <section class="ancho_pagina">
+
+      <div class="seccion_home">
+        <a href=""><img src="img/Webpack.png" alt="Logo Webpack" /></a>
+        <a href="" class="nombre_categoria">Webpack</a>
+      </div>
+
+      <div class="seccion_home">
+        <a href=""><img src="img/Parcel.png" alt="Logo Parcel" /></a>
+        <a href="" class="nombre_categoria">Parcel</a>
+      </div>
+
+      <div class="seccion_home">
+        <a href=""><img src="img/Rollup.png" alt="Logo Rollup" /></a>
+        <a href="" class="nombre_categoria">Rollup</a>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p><i class="far fa-copyright"></i> Blanca Tormo Morales. Herramientas HTML y CSS aula 1</p>
+  </footer>
+
+  <!--Código menú desplegable-->
+  <script>
+    function botonMenu() {
+      document.getElementById("myMenu").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("menu-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

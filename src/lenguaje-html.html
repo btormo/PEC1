@@ -1,0 +1,208 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo.png" alt="Logotipo" /></a>
+        </div>
+    </header>
+
+    <nav>
+        <!--Menu movil-->
+        <div class="menu-movil">
+            <button onclick="botonMenu()" class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div id="myMenu" class="menu-content">
+                <li><a href="lenguajes-front-end.html">Lenguajes front-end</a></li>
+                <li><a href="preprocesadores.html">Preprocesadores</a></li>
+                <li><a href="">Module bundlers</a></li>
+            </div>
+        </div>
+
+        <!--Menu desktop-->
+        <ul class="menu_desktop">
+            <li><a href="lenguajes-front-end.html">Lenguajes front-end</a></li>
+            <li><a href="preprocesadores.html">Preprocesadores</a></li>
+            <li><a href="">Module bundlers</a></li>
+        </ul>
+    </nav>
+    <main>
+        <ol class="menu_migas">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="active">|</li>
+            <li><a href="lenguajes-front-end.html">Lenguajes front-end</a></li>
+            <li>|</li>
+            <li class="activa">HTML</li>
+        </ol>
+        <section class="seccion_categoria">
+            <h1>HTML</h1>
+            <h2 id="P1">¿Qué es HTML?</h2>
+            <p><b>HTML</b>, que significa Lenguaje de Marcado de Hipertextos (HyperText Markup Language), es la pieza
+                más básica para la construcción de la web y se usa para definir el sentido y estructura del contenido en
+                una página web. Sirve de referencia al software que conecta con la elaboración de páginas web en sus
+                diferentes versiones, define una estructura básica y un código para la definición de
+                contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es el lenguaje que se ha
+                impuesto en la visualización de páginas web y el que todos los navegadores actuales han adoptado.</p>
+            <p>Además de HTML se suelen utilizar otros lenguajes para describir la apariencia/presentación de una página
+                web (<a href="">CSS</a>) o su funcionalidad (<a href="">Javascript</a>).</p>
+
+            <h2 id="P2">La estructura de una página HTML</h2>
+            <p>Este lenguaje de marcado se construye en forma de etiquetas o tags rodeadas por corchetes angulares
+                dentro del contenido de la página web. Muchas de las etiquetas vienen 'en pareja', siendo la primera la
+                etiqueta o tag inicial o de apertura y la segunda de cierre; pero
+                también existen algunos tags conocidos como elementos vacíos.</p>
+            <p>HTML puede incluir o incrustar scripts escritos en lenguajes como JavaScript que afectan al
+                comportamiento de las páginas en HTML y crean webs dinámicas, y puede también describir en cierta manera
+                la apariencia de un documento, aunque para dar estilo a las páginas web escritas con este lenguaje, lo
+                más habitual es la utilización de las hojas de estilo en cascada, Cascading Style Sheets, o su nombre
+                más común, CSS..</p>
+            <p>Las páginas HTML se dividen en:</p>
+            <ul>
+
+                <li>cabecera o head: incluye información sobre dicha página (título, idioma, hojas de estilos) - todo lo
+                    que el usuario no ve, a excepción del título.</li>
+                <li>cuerpo o body: incluye todos sus contenidos (párrafos de texto, imágenes) - todo lo que ve el
+                    usuario.</li>
+            </ul>
+            <img src="img/ejemplo-html.png" alt="Estructura código HTML" />
+            <quote><b>Img. 1:</b> Ejemplo de esctructura una página HTML</quote>
+            <h2 id="P3">Etiquetas, atributos y elementos</h2>
+            <p>HTML usa "marcado" para anotar textos, imágenes y otro contenido para ser mostrado en
+                un navegador web. El principal elemento de marcado de HTML son las <b>etiquetas</b>. Estas, a su vez,
+                contienen ciertas propiedades como son <b>atributos</b> y <b>contenido</b>.</p>
+
+            <h3 id="P4">Atributos</h3>
+            <p>Los atributos son un tipo de marcador que van siempre dentro de los elementos y los definen
+                completamente. </p>
+            <p>Como norma general, podemos encontrar dos tipos de atributos. Los atributos del tipo nombre = valor
+                suelen ir separados por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento,
+                después del nombre del elemento. El valor puede estar rodeado por comillas dobles o simples.​ En
+                contraste con los pares nombre-elemento, encontramos unos atributos que afectan al elemento simplemente
+                por su presencia (tal como el atributo ismap para el elemento img).</p>
+            <p>Existen distintos tipos de atributos que se dividen en cuatro grupos según su necesidad:</p>
+            <ul>
+                <li><b>Atributos básicos</b>: se utilizan en la mayoría de etiquetas HTML y XHTML, aunque adquieren
+                    mayor
+                    sentido cuando se utilizan hojas de estilo en cascada (CSS): </li>
+                <ul>
+                    <li><b>id="texto"</b>: Establece un indicador único a cada elemento.</li>
+                    <li><b>class="texto"</b>: Establece la clase CSS que se aplica a los estilos del elemento.</li>
+                    <li><b>style="texto"</b>: Aplica de forma directa los estilos CSS de un elemento.</li>
+                    <li><b>title="texto"</b>: Establece el título del elemento (Mejora la accesibilidad).</li>
+                </ul>
+
+                <li><b>Atributos de internacionalización</b>: se utilizan en aquellas páginas que muestran sus
+                    contenidos en
+                    varios idiomas y las que quieran indicar de forma explícita el idioma de sus contenidos: </li>
+                <ul>
+                    <li><b>lang="codigo"</b>: Indica el idioma del elemento.</li>
+                    <li><b>xml:lang="codigo"</b>: Indica el idioma del elemento, aunque tiene más prioridad que el
+                        atributo
+                        anterior y es obligatorio si se incluye el atributo lang.</li>
+                    <li><b>dir</b>: Indica la dirección del texto</li>
+                </ul>
+
+                <li><b>Atributos de eventos</b>: se utilizan en las páginas web que incluyen código JavaScript para
+                    realizar
+                    acciones dinámicas sobre los elementos de la página. Algunos ejemplos de estos atributos son: </li>
+                <ul>
+                    <li><b>onclick</b>: Ejecuta la acción cuando se realiza un clic sobre el elemento.</li>
+                    <li><b>onmouseover</b>: Ejecuta la acción cuando se detecta que el ratón se sitúa sobre el elemento.
+                    </li>
+                    <li><b>onload</b>: Ejecuta la acción cuando se carga el documento</li>
+                    <li><b>onselect</b>: Ejecuta la acción cuando un usuario selecciona texto en un campo de texto</li>
+                    <li><b>onkeypress</b>: Ejecuta la acción cuando se pulsa una tecla</li>
+                </ul>
+
+                <li><b>Atributos de foco</b>: se le denomina foco o focus, cuando un control o elemento del documento ha
+                    sido
+                    seleccionado. Cuando ese elemento deja de estar seleccionado, "pierde el foco" y es el nuevo
+                    elemento seleccionado el que se dice que tiene "el foco": </li>
+                <ul>
+                    <li><b>accesskey="letra"</b>: Establece una tecla de acceso rápido a un elemento HTML.</li>
+                    <li><b>tabindex="numero"</b>: Establece la posición del elemento en el orden de tabulación de la
+                        página
+                        (valor entre 0 y 32.767).</li>
+                    <li><b>onfocus, onblur</b>: Controlan los eventos JavaScript que se ejecutan cuando el elemento
+                        obtiene o
+                        pierde el foco</li>
+                </ul>
+            </ul>
+
+            <h3 id="P5">Elementos</h3>
+            <p>Además de etiquetas y atributos, HTML define el término elemento para referirse a las partes que componen
+                los documentos HTML.</p>
+            <p>El lenguaje HTML clasifica a todos los elementos en dos grupos: elementos en línea o inline elements y
+                elementos en bloque o block elements. La diferencia entre ambos viene dada por el modelo de contenido,
+                por el formato y la dirección.</p>
+            <ul>
+                <li><b>Elementos en bloque</b>: siempre empiezan en una nueva línea y ocupan todo el espacio disponible
+                    hasta
+                    el final de la línea. Algunos ejemplos
+                    de este tipo de elementos:</li>
+                <ul>
+                    <li><b>h1, h2, h3, h4, h5, h6</b>: Crea un encabezado o título de primer, segundo, tercer, cuarto,
+                        quinto o
+                        sexto nivel para una sección del documento respectivamente.</li>
+                    <li><b>div</b>: Es un elemento en bloque genérico y sirve para crear secciones o agrupar contenidos.
+                    </li>
+                    <li><b>table</b>: Tabla.</li>
+                    <li><b>ul</b>: Crea una lista no ordenada.</li>
+                </ul>
+                <li><b>Elementos en línea</b>: sólo ocupan el espacio necesario para mostrar sus contenidos. Algunos
+                    ejemplos
+                    de este tipo de elementos:</li>
+                <ul>
+                    <li><b>img</b>: Imagen.</li>
+                    <li><b>strong</b>: Marca con especial énfasis las partes más importantes de un texto.</li>
+                    <li><b>input</b>: Posibilita y define la introducción de datos en el formulario.</li>
+                    <li><b>cite</b>: Se emplea para marcar una cita o una referencia a otras fuentes.</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section class="ir_a">
+            <ul>
+                <li>Ir a:</li>
+                <li><a href="">CSS</li>
+                <li><a href="">Javascript</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><i class="far fa-copyright"></i> Blanca Tormo Morales. Herramientas HTML y CSS aula 1</p>
+    </footer>
+
+    <!--Código menú desplegable-->
+    <script>
+        function botonMenu() {
+            document.getElementById("myMenu").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("menu-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
