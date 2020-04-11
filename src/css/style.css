@@ -6,6 +6,7 @@ body{
 	margin: 0 auto;
 	position: absolute;
 }
+
 main{
 	width:100%;
 	float:left;
@@ -142,11 +143,13 @@ ol .activa {
 .indice_categorias h1:hover{
 	color: #DADAD9;
 }
+
 .indice_categorias ul li{
 	list-style-type: none;
 	background: url("list-icon.png")0 1em no-repeat;
 	padding-left: 25px;
 }
+
 .indice_categorias a{	
 	width: 100%;
 	margin-left: 0;
@@ -166,7 +169,6 @@ ol .activa {
 	font-size: 15pt;
 	line-height: 20pt;
 }
-
 
 /*PÁGINA CATEGORÍA*/
 .seccion_categoria{
@@ -422,6 +424,7 @@ ol .activa {
 	.titular_seccion{
 		padding-top: 30px;
 	}
+
 	.seccion_home {
 		width: 100%;
 		margin-top: 30px;
@@ -442,7 +445,6 @@ ol .activa {
 	.indice_categorias h1{
 		font-size: 16pt;
 	}
-
 
 	/*PÁGINA CATEGORÍA*/
 	.seccion_categoria img{
