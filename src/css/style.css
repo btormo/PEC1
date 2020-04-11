@@ -140,10 +140,6 @@ ol .activa {
 	color: #000000;
 }
 
-.indice_categorias h1:hover{
-	color: #DADAD9;
-}
-
 .indice_categorias ul li{
 	list-style-type: none;
 	background: url("list-icon.png")0 1em no-repeat;
