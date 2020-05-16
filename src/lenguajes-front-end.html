@@ -1,21 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
     <title>PEC1: Herramientas HTML y CSS</title>
+    <link rel="shortcut icon" type="img/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,900,900i&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/Logo.png" alt="Logotipo" /></a>
+            <a href="index.html"><img src="img/Logo.svg" alt="Logotipo" /></a>
         </div>
     </header>
 
@@ -24,9 +25,11 @@
         <div class="menu-movil">
             <button onclick="t()" class="dropbtn"><i class="fas fa-bars"></i></button>
             <div id="myMenu" class="menu-content">
-                <li><a href="lenguajes-front-end.html">Lenguajes front-end</a></li>
-                <li><a href="preprocesadores.html">Preprocesadores</a></li>
-                <li><a href="">Module bundlers</a></li>
+                <ul>
+                    <li><a href="lenguajes-front-end.html">Lenguajes front-end</a></li>
+                    <li><a href="preprocesadores.html">Preprocesadores</a></li>
+                    <li><a href="">Module bundlers</a></li>
+                </ul>
             </div>
         </div>
 
@@ -45,48 +48,71 @@
         </ol>
         <section class="indice_categorias">
             <h1>LENGUAJES FRONT-END</h1>
-            <ul><a href="lenguaje-html.html"><b>HTML</b></a>
-                <li><a href="lenguaje-html.html#P1">¿Qué es HTML?</a></li>
-                <li><a href="lenguaje-html.html#P2">La estructura de una página HTML</a></li>
-                <li><a href="lenguaje-html.html#P3">Etiquetas, atributos y elementos</a></li>
-                <ul>
-                    <li><a href="lenguaje-html.html#P4">Atributos</a></li>
-                    <li><a href="lenguaje-html.html#P5">Elementos</a></li>
-                </ul>
-            </ul>
-            <ul><a href=""><b>CSS</b></a>
-                <li><a href="">¿Qué es CSS?</a></li>
-                <li><a href="">Funcionamiento básico de CSS</a></li>
-                <li><a href="">Sintaxis de CSS</a></li>
-                <ul>
-                    <li><a href="">Fuentes</a></li>
-                    <li><a href="">Selectores</a></li>
-                    <ul>
-                        <li><a href="">Selectores básicos</a></li>
-                        <li><a href="">Selectores avanzados</a></li>
-                        <li><a href="">Agrupación de reglas</a></li>
+            <div class="contenido">
+                <div class="columna_izq">
+                    <img src="img/HTML5.svg" alt="Logotipo" />
+                </div>
+                <div class="columna_der">
+                    <ul><a href="lenguaje-html.html"><b>HTML</b></a>
+                        <li><a href="lenguaje-html.html#P1">¿Qué es HTML?</a></li>
+                        <li><a href="lenguaje-html.html#P2">La estructura de una página HTML</a></li>
+                        <li><a href="lenguaje-html.html#P3">Etiquetas, atributos y elementos</a></li>
+                        <ul>
+                            <li><a href="lenguaje-html.html#P4">Atributos</a></li>
+                            <li><a href="lenguaje-html.html#P5">Elementos</a></li>
+                        </ul>
                     </ul>
-                    <li><a href="">Herencia</a></li>
-                    <li><a href="">Posicionamiento</a></li>
-                </ul>
-                <li><a href="">Soporte en navegadores web</a></li>
-            </ul>
-            <ul><a href=""><b>Javascript</b></a>
-                <li><a href="">¿Qué es Javascript?</a></li>
-                <li><a href="">Elementos del leguaje</a></li>
-                <li><a href="">Los operadores</a></li>
-                <ul>
-                    <li><a href="">Datos</a></li>
-                    <li><a href="">Variables</a></li>
-                    <li><a href="">Objetos</a></li>
-                    <li><a href="">Arrays</a></li>
-                    <li><a href="">Funciones</a></li>
-                </ul>
-                <li><a href="">La gramática</a></li>
-                <li><a href="">Los objetos</a></li>
+                </div>
+                <div class="columna_izq">
+                    <img src="img/CSS3.svg" alt="Logotipo" />
+                </div>
+                <div class="columna_der">
+                    <ul><a href=""><b>CSS</b></a>
+                        <li><a href="">¿Qué es CSS?</a></li>
+                        <li><a href="">Funcionamiento básico de CSS</a></li>
+                        <li><a href="">Sintaxis de CSS</a></li>
+                        <ul>
+                            <li><a href="">Fuentes</a></li>
+                            <li><a href="">Selectores</a></li>
+                            <ul>
+                                <li><a href="">Selectores básicos</a></li>
+                                <li><a href="">Selectores avanzados</a></li>
+                                <li><a href="">Agrupación de reglas</a></li>
+                            </ul>
+                            <li><a href="">Herencia</a></li>
+                            <li><a href="">Posicionamiento</a></li>
+                        </ul>
+                        <li><a href="">Soporte en navegadores web</a></li>
+                    </ul>
+                </div>
+                <div class="columna_izq">
+                    <img src="img/Js.svg" alt="Logotipo" />
+                </div>
+                <div class="columna_der">
+                    <ul><a href=""><b>Javascript</b></a>
+                        <li><a href="">¿Qué es Javascript?</a></li>
+                        <li><a href="">Elementos del leguaje</a></li>
+                        <li><a href="">Los operadores</a></li>
+                        <ul>
+                            <li><a href="">Datos</a></li>
+                            <li><a href="">Variables</a></li>
+                            <li><a href="">Objetos</a></li>
+                            <li><a href="">Arrays</a></li>
+                            <li><a href="">Funciones</a></li>
+                        </ul>
+                        <li><a href="">La gramática</a></li>
+                        <li><a href="">Los objetos</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
     </main>
+
     <footer>
+        <div class="logo_footer">
+            <a href="index.html"><img src="img/Logo_footer.svg" alt="Logotipo" /></a>
+        </div>
         <p><i class="far fa-copyright"></i> Blanca Tormo Morales. Herramientas HTML y CSS aula 1</p>
     </footer>
 

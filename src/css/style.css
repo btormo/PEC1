@@ -1,4 +1,24 @@
 /*ELEMENTOS GENERALES PÁGINA WEB*/
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #FF930C;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #FF6B07;
+  }
+
 /*Cuerpo principal*/
 body{
 	background-color:white;
@@ -15,42 +35,52 @@ main{
 /*pie web*/
 footer {
 	width: 100%;
-	height: 50px;
-	padding-top: 50px;
+	height: 150px;
+	padding-top: 70px;
 	float: left;
 	background-color: #ffffff;
+}
+.logo_footer{
+	width: 130px;
+	margin:0 auto;
+}
+
+.logo_footer img {
+	clip-path:  ellipse(47% 48% at 50% 50%);
+	width: 100%;
+	margin: 10px auto;
 }
 
 footer p{
 	width: 80%;
+	float: left;
 	text-align: center;
 	font-size: 8pt;
 	padding-top: 10px;
 	margin-left: 10%;
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
-	color: #8A8A8A;
+	color: #FF930C;
 }
 
 /*Menu migas*/
 .menu_migas{
-	width: 90%;
+	width: 70%;
+	max-width: 1000px;
 	padding: 0;
 	list-style: none;
-	margin-left: 10%;
-	margin-top:50px;
-	float:left;
+	margin: 0 auto;
 }
 
 .menu_migas li {
 	display: inline;
 	margin: 10px 8px;
-	color: #8A8A8A;
+	color: #FF930C;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
 	text-align: left;
 	font-size: 10pt;
-	font-weight:500;
+	font-weight: 500;
 }
 
 ol .activa {
@@ -65,7 +95,7 @@ ol .activa {
 }
 
 .menu_migas li a {
-	color: #8A8A8A;
+	color: #FF930C;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
 	text-align: left;
@@ -74,15 +104,16 @@ ol .activa {
 }
 
 .menu_migas li a:hover{
-	color: #DADAD9;
+	color: #FF6B07;
+	font-weight: 550;
 }
 
 /*HOME*/
 /*cabeceras categorias*/
 .titular_seccion{
-	width: 80%;
-	margin: 0 10%;
-	float: left;
+	width: 70%;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .titular_seccion h1{
@@ -97,7 +128,7 @@ ol .activa {
 }
 
 .titular_seccion a h1:hover{
-	color: #DADAD9;
+	color: #FF6B07;
 }
 
 /*Categorias*/
@@ -119,17 +150,11 @@ ol .activa {
 }
 
 .seccion_home a:hover{
-	font-weight: 600;
-	color: #DADAD9;
+	font-weight: 550;
+	color: #FF6B07;
 }
 
 /*PÁGINA INDICE CATEGORÍAS*/
-.indice_categorias{
-	width: 50%;
-	margin: 0 25%;
-	float: left;
-}
-
 .indice_categorias h1{
 	width: 100%;
 	float: left;
@@ -137,16 +162,15 @@ ol .activa {
 	margin: 90px 0 50px 0;
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
-	color: #000000;
+	color: #FF930C;
 }
 
-.indice_categorias ul li{
+.columna_der ul li{
 	list-style-type: none;
 	background: url("list-icon.png")0 1em no-repeat;
 	padding-left: 25px;
 }
-
-.indice_categorias a{	
+.columna_der a{	
 	width: 100%;
 	margin-left: 0;
 	text-align: left;
@@ -158,7 +182,7 @@ ol .activa {
 	text-decoration:none;
 }
 
-.indice_categorias a b{	
+.columna_izq a b{	
 	width: 100%;
 	margin-left: -40;
 	text-align: left;
@@ -167,25 +191,21 @@ ol .activa {
 }
 
 /*PÁGINA CATEGORÍA*/
+
 .seccion_categoria{
-	width: 80%;
-	margin: 0 0 0 10%;
-	float: left;
+	width: 70%;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
-.seccion_categoria h1{
-	width: 100%;
+.seccion_categoria img{
+	width: 160px;
+	height: auto;
 	float: left;
-	text-align: left;
-	margin: 50px 0 10px 0;
-	font-weight: 700;
-	font-family: 'Montserrat', sans-serif;
-	color: #000000;
+	margin:20px 20px 10px 0;
 }
 
 .seccion_categoria h2{
-	width: 100%;
-	float: left;
 	text-align: left;
 	margin: 40px 0 5px 0;
 	font-weight: 600;
@@ -204,10 +224,8 @@ ol .activa {
 }
 
 .seccion_categoria p{
-	width: 100%;
-	float: left;
 	text-align: justify;
-	margin: 5px 0;
+	margin: 10px 0;
 	font-size: 10pt;
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
@@ -255,13 +273,7 @@ ol .activa {
 	color: #8A8A8A;
 }
 
-.seccion_categoria img{
-	width: 50%;
-	margin-left: 25%;
-	margin-top: 30px;
-}
-
-.seccion_categoria quote{
+.imagen_texto quote{
 	width: 100%;
 	float: left;
 	text-align: center;
@@ -302,7 +314,7 @@ ol .activa {
 
 .ir_a a:hover{
 	text-decoration: none;
-	color: #8a8a8a;
+	color: #FF6B07;
 }
 
 .codigo_ejemplo{
@@ -338,7 +350,7 @@ ol .activa {
 		float: left;
 		background-color: #ffffff;
 		position: fixed;
-		z-index: 1;
+		z-index: 2;
 	}
 
 	.logo{
@@ -354,12 +366,13 @@ ol .activa {
   	/*menú páginas*/
   	nav{
 		width: 100%;
-		height: 80px;
+		height: 70px;
 		padding-top: 15px;
 		margin-left: 0%;
 		float: right;
 		position: fixed;
 		background-color: #ffffff;
+		z-index: 1;
 	}
 	
 	.menu_desktop{
@@ -410,6 +423,10 @@ ol .activa {
 		display: block;
 	}
 
+	.menu_migas{
+		display:none;
+	}
+
 	/*HOME*/
 	/*Categorias home*/
 	.ancho_pagina {
@@ -442,11 +459,77 @@ ol .activa {
 		font-size: 16pt;
 	}
 
+	.contenido{
+		width: 100%;
+		display: grid;
+		grid-template-columns: 100px auto;
+		padding: 0;
+		float: left;
+	}
+
+	.columna_izq{
+		padding-top: 20px;
+	}
+	
+	.columna_izq img{
+		width: 120%;
+	}
+	
+	.columna_der{
+		padding: 0;
+		margin-left: -20px;
+	}
+
 	/*PÁGINA CATEGORÍA*/
+	.cabecera_inicio_html {
+		background: url(banner_html.svg);
+		background-size: cover;
+		position: relative;
+		width: 100%;
+		height: 120px;
+		float: left;
+		margin-top: 100px;
+		margin-bottom: 50px;
+	}
+
+	.cabecera_inicio_postCss {
+		background: url(banner_postcss.svg);
+		background-size: cover;
+		position: relative;
+		width: 100%;
+		height: 120px;
+		float: left;
+		margin-top: 100px;
+		margin-bottom: 50px;
+	}
+
+	.cabecera_inicio_html h1{
+		font-size: 40pt;
+		text-align: center;
+		width: 100%;
+		margin:27px 0;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		color: #ffffff;
+		position: absolute;
+	}
+
+	.cabecera_inicio_postCss h1{
+		font-size: 40pt;
+		text-align: center;
+		width: 100%;
+		margin:27px 0;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		color: #ffffff;
+		position: absolute;
+	}
+	
 	.seccion_categoria img{
-		width: 90%;
-		margin-left: 5%;
-		margin-top: 30px;
+		width: 100px;
+		height: auto;
+		float: left;
+		margin:30px 20px 10px 0;
 	}
 
 	.seccion_categoria h1{
@@ -463,6 +546,19 @@ ol .activa {
 
 	.seccion_categoria ul, ol{
 		padding-left: 20px;
+	}
+	
+	.imagen_texto {
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 50px;
+		float: left;
+	}
+
+	.imagen_texto img{
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 30px;
 	}
 
 	.codigo_ejemplo{
@@ -533,7 +629,7 @@ ol .activa {
 	}
 
 	.menu_desktop li a:hover {
-		color: #DADAD9;
+		color: #FF6B07;
 	}
 
 	.menu_desktop a:active {
@@ -543,7 +639,8 @@ ol .activa {
 	/*HOME*/
 	/*Categorias home*/
 	.ancho_pagina {
-		width: 80%;
+		width: 70%;
+		max-width: 1000px;
 		height: auto;
 		margin:0 auto;
 		display: flex;
@@ -560,19 +657,86 @@ ol .activa {
 	/*PÁGINA INDICE CATEGORÍAS*/
 	.indice_categorias{
 		width: 50%;
-		margin: 0 25%;
-		float: left;
+		max-width: 800px;
+		margin: 0 auto;
 	}
 
 	.indice_categorias h1{
 		font-size: 20pt;
 	}
 
+	.contenido{
+		width: 100%;
+		display: grid;
+		grid-template-columns: 150px auto;
+		padding: 0;
+		float: left;
+	}
+
+	.columna_izq{
+		padding-top: 20px;
+	}
+	
+	.columna_izq img{
+		width: 100%;
+	}
+	
+	.columna_der{
+		padding: 0;
+		margin-left: -10px;
+	}
+
 	/*PÁGINA CATEGORÍA*/
-	.seccion_categoria img{
-		width: 50%;
-		margin-left: 25%;
-		margin-top: 30px;
+	.cabecera_inicio_html {
+		background: url(banner_html.svg);
+		background-size: cover;
+		position: relative;
+		width: 100%;
+		height: 170px;
+		float: left;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.cabecera_inicio_postCss {
+		background: url(banner_postcss.svg);
+		background-size: cover;
+		position: relative;
+		width: 100%;
+		height: 170px;
+		float: left;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.cabecera_inicio_html h1{
+		font-size: 70pt;
+		text-align: center;
+		width: 100%;
+		margin:29px 0;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		color: #ffffff;
+		position: absolute;
+	}
+
+	.cabecera_inicio_postCss h1{
+		font-size: 70pt;
+		text-align: center;
+		width: 100%;
+		margin:29px 0;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		color: #ffffff;
+		position: absolute;
+	}
+
+	.contenido_detalle{
+		width: 100%;
+		display: grid;
+		grid-template-columns: 200px auto;
+		padding: 0;
+		float: left;
 	}
 
 	.seccion_categoria h1{
@@ -589,6 +753,19 @@ ol .activa {
 
 	.seccion_categoria ul, ol{
 		padding-left: 40px;
+	}
+	
+	.imagen_texto {
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 50px;
+		float: left;
+	}
+	
+	.imagen_texto img{
+		width: 50%;
+		margin-left: 25%;
+		margin-top: 30px;
 	}
 
 	.codigo_ejemplo{
