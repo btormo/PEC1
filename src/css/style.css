@@ -25,7 +25,7 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	position: absolute;
-	font-display: swap;
+	font-display: block;
 }
 
 main{
@@ -60,7 +60,6 @@ footer p{
 	padding-top: 10px;
 	margin-left: 10%;
 	font-weight: 600;
-	font-family: 'Montserrat', sans-serif;
 	color: #FF930C;
 }
 
@@ -82,6 +81,7 @@ footer p{
 	text-align: left;
 	font-size: 10pt;
 	font-weight: 500;
+	font-display: auto;
 }
 
 ol .activa {
@@ -93,6 +93,7 @@ ol .activa {
 	text-align: left;
 	font-size: 10pt;
 	font-weight:500;
+	font-display: auto;
 }
 
 .menu_migas li a {
@@ -102,6 +103,7 @@ ol .activa {
 	text-align: left;
 	font-size: 10pt;
 	font-weight:500;
+	font-display: auto;
 }
 
 .menu_migas li a:hover{
@@ -126,6 +128,7 @@ ol .activa {
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
+	font-display: auto;
 }
 
 .titular_seccion a h1:hover{
@@ -148,6 +151,7 @@ ol .activa {
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
 	text-decoration:none;
+	font-display: auto;
 }
 
 .seccion_home a:hover{
@@ -164,6 +168,7 @@ ol .activa {
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
 	color: #FF930C;
+	font-display: auto;
 }
 
 .columna_der ul li{
@@ -181,6 +186,7 @@ ol .activa {
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
 	text-decoration:none;
+	font-display: auto;
 }
 
 .columna_izq a b{	
@@ -212,6 +218,7 @@ ol .activa {
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
+	font-display: auto;
 }
 
 .seccion_categoria h3{
@@ -222,6 +229,7 @@ ol .activa {
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
+	font-display: auto;
 }
 
 .seccion_categoria p{
@@ -230,6 +238,7 @@ ol .activa {
 	font-size: 10pt;
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
+	font-display: auto;
 }
 
 .seccion_categoria ul{
@@ -251,6 +260,7 @@ ol .activa {
 	font-size: 10pt;
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
+	font-display: auto;
 }
 
 .seccion_categoria ol li {
@@ -261,6 +271,7 @@ ol .activa {
 	font-size: 10pt;
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
+	font-display: auto;
 }
 
 .seccion_categoria b{
@@ -283,6 +294,7 @@ ol .activa {
 	font-family: 'Montserrat', sans-serif;
 	font-style: italic;
 	color: #000000;
+	font-display: auto;
 }
 	
 .ir_a{
@@ -305,6 +317,7 @@ ol .activa {
 	color: #000000;
 	font-weight: 400;
 	list-style: none;
+	font-display: auto;
 }
 
 .ir_a ul li a{
@@ -418,6 +431,7 @@ ol .activa {
 		text-decoration: none;
 		display: block;
 		text-align: center;
+		font-display: auto;
 	}
 
 	.show {
@@ -513,6 +527,7 @@ ol .activa {
 		font-family: 'Montserrat', sans-serif;
 		color: #ffffff;
 		position: absolute;
+		font-display: auto;
 	}
 
 	.cabecera_inicio_postCss h1{
@@ -524,6 +539,7 @@ ol .activa {
 		font-family: 'Montserrat', sans-serif;
 		color: #ffffff;
 		position: absolute;
+		font-display: auto;
 	}
 	
 	.seccion_categoria img{
@@ -627,6 +643,7 @@ ol .activa {
 		text-decoration: none;
 		text-align: center;
 		font-size: 12pt;
+		font-display: auto;
 	}
 
 	.menu_desktop li a:hover {
@@ -719,6 +736,7 @@ ol .activa {
 		font-family: 'Montserrat', sans-serif;
 		color: #ffffff;
 		position: absolute;
+		font-display: auto;
 	}
 
 	.cabecera_inicio_postCss h1{
@@ -730,6 +748,7 @@ ol .activa {
 		font-family: 'Montserrat', sans-serif;
 		color: #ffffff;
 		position: absolute;
+		font-display: auto;
 	}
 
 	.contenido_detalle{
